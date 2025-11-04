@@ -28,9 +28,9 @@
 #define fill(a,b) memset(a,b,sizeof(a))
 #define swap(a,b) do{__typeof__(a) t=a;a=b;b=t;}while(0)
 #define rev(a,b) Mf(i,0,b/2) swap(a[i],a[b-i-1])
-#define sfindf(a, b) strchr(a,b)==NULL?-1:strchr(a,b)-a
-#define sfindb(a, b) strrchr(a,b)==NULL?-1:strrchr(a,b)-a
-#define ssub(a, b) strstr(a,b)==NULL?-1:strstr(a,b)-a
+#define sfindf(a,b) strchr(a,b)==NULL?-1:strchr(a,b)-a
+#define sfindb(a,b) strrchr(a,b)==NULL?-1:strrchr(a,b)-a
+#define ssub(a,b) strstr(a,b)==NULL?-1:strstr(a,b)-a
 #define Enter printf("\n")
 #define Space printf(" ")
 #define Yc printf("YES")
