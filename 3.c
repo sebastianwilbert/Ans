@@ -122,8 +122,8 @@ int32_t main(){
             scanf(Fd, &arr[i]);
         }
         scanf(Fd, &k);
-        Mf(i, 0, n-1){
-            if (arr[i]+arr[i+1]<=k){
+        Mf(i, 1, n){
+            if (arr[i-1]+arr[i]<=k){
                 cnt++;
             }
         }
