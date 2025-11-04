@@ -117,10 +117,10 @@ int32_t main(){
     //scanf(Fd, &T);
     Mf(t, 0, T){
         char k[105], c[105];
-        char *p = k;
         int cnt = 0;
         scanf(Fs, k);
         scanf(Fs, c);
+        char *p = k;
         while(strstr(p, c)!=NULL){
             cnt++;
             p = strstr(p, c)+strlen(c);
