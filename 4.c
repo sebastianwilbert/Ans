@@ -134,6 +134,7 @@ int32_t main(){
                 }
             }
             if (!check){
+                start = n;
                 ans = false;
             }
         }
