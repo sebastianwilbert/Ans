@@ -112,40 +112,21 @@ void msort(int a[], int l, int r) {
     }
 }
 
-struct stu{
-    char name[15]; int group;
-};
-
 int32_t main(){
-    int T; int total = 0;
-    scanf(Fd, &T);
+    int T = 1;
+    //scanf(Fd, &T);
     Mf(t, 0, T){
-        int n;
+        int m, x, n, p, q;
+        scanf(Fd, &m);
+        scanf(Fd, &x);
         scanf(Fd, &n);
-        struct stu all[n];
-        int groups[20];
-        fill(groups, 0);
         Mf(i, 0, n){
-            char name[15]; int group;
-            scanf(Fs, name);
-            strcpy(all[i].name, name);
-            scanf(Fd, &group);
-            all[i].group = group;
-            groups[group-1]++;
+            scanf(Fd, &p);
+            scanf(Fd, &q);
+            (x-p<1)?(x=1):(x-=p);
+            (x+q>m)?(x=m):(x+=q);
         }
-        printf("Case #%lld:", t+1);
+        printf(Fd, x);
         Enter;
-        Mf(i, 0, 20){
-            if (groups[i]!=0){
-                printf("Group %lld(%lld):", i+1, groups[i]);
-                Enter;
-                Mf(j, 0, n){
-                    if (all[j].group==i+1){
-                        printf(Fs, all[j].name);
-                        Enter;
-                    }
-                }
-            }
-        }
     }
 }
