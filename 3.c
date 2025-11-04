@@ -116,14 +116,14 @@ int32_t main(){
     int T = 1;
     //scanf(Fd, &T);
     Mf(t, 0, T){
-        int n, arr[105], k, cnt = 0;
+        int n, a[105], k, cnt = 0;
         scanf(Fd, &n);
         Mf(i, 0, n){
-            scanf(Fd, &arr[i]);
+            scanf(Fd, &a[i]);
         }
         scanf(Fd, &k);
         Mf(i, 1, n){
-            if (arr[i-1]+arr[i]<=k){
+            if (a[i-1]+a[i]<=k){
                 cnt++;
             }
         }
